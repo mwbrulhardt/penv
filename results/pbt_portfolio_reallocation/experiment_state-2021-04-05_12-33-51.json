@@ -1,0 +1,34 @@
+{
+  "checkpoints": [
+    "{\n  \"trainable_name\": \"PPO\",\n  \"trial_id\": \"d9afb_00000\",\n  \"config\": {\n    \"env\": \"TradingEnv\",\n    \"env_config\": {\n      \"total_steps\": 1000,\n      \"num_assets\": 4,\n      \"commission\": 0.001,\n      \"time_cost\": 0,\n      \"window_size\": 10,\n      \"min_periods\": 150\n    },\n    \"kl_coeff\": 1.0,\n    \"num_workers\": 8,\n    \"num_gpus\": 0,\n    \"observation_filter\": \"NoFilter\",\n    \"framework\": \"torch\",\n    \"model\": {\n      \"custom_model\": \"reallocate\",\n      \"custom_model_config\": {\n        \"num_assets\": 4\n      },\n      \"custom_action_dist\": \"dirichlet\"\n    },\n    \"num_sgd_iter\": 10,\n    \"sgd_minibatch_size\": 128,\n    \"lambda\": 0.9065505639070756,\n    \"clip_param\": 0.40081950355640383,\n    \"lr\": 0.00015250972051760844,\n    \"train_batch_size\": 12509\n  },\n  \"local_dir\": \"/app/results/pbt_portfolio_reallocation\",\n  \"evaluated_params\": {\n    \"env_config/window_size\": 10,\n    \"observation_filter\": \"NoFilter\",\n    \"lambda\": 0.9065505639070756,\n    \"clip_param\": 0.40081950355640383,\n    \"lr\": 0.00015250972051760844,\n    \"train_batch_size\": 12509\n  },\n  \"experiment_tag\": \"0_clip_param=0.40082,window_size=10,lambda=0.90655,lr=0.00015251,observation_filter=NoFilter,train_batch_size=12509\",\n  \"location\": {\n    \"_type\": \"CLOUDPICKLE_FALLBACK\",\n    \"value\": \"8005953a000000000000008c0e7261792e74756e652e747269616c948c084c6f636174696f6e9493942981947d94288c08686f73746e616d65944e8c03706964944e75622e\"\n  },\n  \"resources\": {\n    \"cpu\": 1,\n    \"gpu\": 0,\n    \"memory\": 0,\n    \"object_store_memory\": 0,\n    \"extra_cpu\": 8,\n    \"extra_gpu\": 0,\n    \"extra_memory\": 0,\n    \"extra_object_store_memory\": 0,\n    \"custom_resources\": {},\n    \"extra_custom_resources\": {}\n  },\n  \"placement_group_factory\": null,\n  \"stopping_criterion\": {\n    \"episode_reward_min\": 20,\n    \"training_iteration\": 100\n  },\n  \"log_to_file\": [\n    null,\n    null\n  ],\n  \"max_failures\": 0,\n  \"last_result\": {},\n  \"last_update_time\": -Infinity,\n  \"metric_analysis\": {},\n  \"n_steps\": [\n    5,\n    10\n  ],\n  \"metric_n_steps\": {},\n  \"export_formats\": [],\n  \"status\": \"RUNNING\",\n  \"start_time\": 1617651231.449394,\n  \"logdir\": \"/app/results/pbt_portfolio_reallocation/PPO_TradingEnv_d9afb_00000_0_clip_param=0.40082,window_size=10,lambda=0.90655,lr=0.00015251,observation_filter=NoFilter,train_batc_2021-04-05_12-33-51\",\n  \"runner\": null,\n  \"last_debug\": 0,\n  \"error_file\": null,\n  \"error_msg\": null,\n  \"trial_name_creator\": null,\n  \"custom_trial_name\": null,\n  \"custom_dirname\": null,\n  \"saving_to\": null,\n  \"remote_checkpoint_dir_prefix\": null,\n  \"checkpoint_freq\": 0,\n  \"checkpoint_at_end\": true,\n  \"keep_checkpoints_num\": null,\n  \"checkpoint_score_attr\": \"training_iteration\",\n  \"sync_on_checkpoint\": true,\n  \"checkpoint_manager\": {\n    \"_type\": \"CLOUDPICKLE_FALLBACK\",\n    \"value\": \"80059566010000000000008c1b7261792e74756e652e636865636b706f696e745f6d616e61676572948c11436865636b706f696e744d616e616765729493942981947d94288c146b6565705f636865636b706f696e74735f6e756d94477ff00000000000008c165f636865636b706f696e745f73636f72655f6465736394898c165f636865636b706f696e745f73636f72655f61747472948c12747261696e696e675f697465726174696f6e948c1c6e65776573745f70657273697374656e745f636865636b706f696e749468008c0a436865636b706f696e749493942981947d94288c0773746f72616765948c0a70657273697374656e74948c0576616c7565944e8c06726573756c74947d9475628c195f6e65776573745f6d656d6f72795f636865636b706f696e7494680b2981947d9428680e8c066d656d6f72799468104e68117d9475628c115f626573745f636865636b706f696e7473945d948c0b5f6d656d62657273686970948f9475622e\"\n  },\n  \"restore_path\": null,\n  \"restoring_from\": null,\n  \"num_failures\": 0,\n  \"results\": \"80054e2e\",\n  \"best_result\": \"80054e2e\",\n  \"param_config\": \"80054e2e\",\n  \"extra_arg\": \"80054e2e\",\n  \"_state_json\": null,\n  \"_state_valid\": false\n}"
+  ],
+  "runner_data": {
+    "_max_pending_trials": 0,
+    "_metric": "episode_reward_min",
+    "_total_time": 0,
+    "_iteration": 0,
+    "_has_errored": false,
+    "_fail_fast": false,
+    "_server_port": null,
+    "_cached_trial_decisions": {},
+    "_queued_trial_decisions": {},
+    "_should_stop_experiment": false,
+    "_local_checkpoint_dir": "/app/results/pbt_portfolio_reallocation",
+    "_remote_checkpoint_dir": null,
+    "_stopper": {
+      "_type": "CLOUDPICKLE_FALLBACK",
+      "value": "80059527000000000000008c107261792e74756e652e73746f70706572948c0b4e6f6f7053746f707065729493942981942e"
+    },
+    "_resumed": false,
+    "_start_time": 1617651231.4329302,
+    "_last_checkpoint_time": -Infinity,
+    "_session_str": "2021-04-05_12-33-51",
+    "checkpoint_file": "/app/results/pbt_portfolio_reallocation/experiment_state-2021-04-05_12-33-51.json",
+    "_checkpoint_period": "auto",
+    "launch_web_server": false
+  },
+  "stats": {
+    "start_time": 1617651231.4329302,
+    "timestamp": 0.0
+  }
+}

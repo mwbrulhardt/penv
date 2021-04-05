@@ -1,0 +1,29 @@
+{
+  "clip_param": 0.13148370903807738,
+  "env": "TradingEnv",
+  "env_config": {
+    "commission": 0.001,
+    "min_periods": 150,
+    "num_assets": 4,
+    "time_cost": 0,
+    "total_steps": 1000,
+    "window_size": 13
+  },
+  "framework": "torch",
+  "kl_coeff": 1.0,
+  "lambda": 0.9240481979956189,
+  "lr": 0.007296950126574734,
+  "model": {
+    "custom_action_dist": "dirichlet",
+    "custom_model": "reallocate",
+    "custom_model_config": {
+      "num_assets": 4
+    }
+  },
+  "num_gpus": 0,
+  "num_sgd_iter": 10,
+  "num_workers": 19,
+  "observation_filter": "MeanStdFilter",
+  "sgd_minibatch_size": 128,
+  "train_batch_size": 16040
+}
