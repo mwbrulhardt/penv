@@ -9,8 +9,9 @@ from ray.tune.schedulers import PopulationBasedTraining
 
 
 @click.command()
-@click.option("--workers", default=8, type=int)
-def main(workers: int):
+@click.option("--num-samples", default=4, type=int)
+@click.option("--num-workers", default=8, type=int)
+def main(num_samples: int, num_workers: int):
     pbt = PopulationBasedTraining(
         time_attr="time_total_s",
         perturbation_interval=50,
@@ -29,7 +30,7 @@ def main(workers: int):
         "PPO",
         name="pbt_portfolio_reallocation",
         scheduler=pbt,
-        num_samples=4,
+        num_samples=num_samples,
         metric="episode_reward_min",
         mode="max",
         config={
@@ -43,7 +44,7 @@ def main(workers: int):
                 "min_periods": 150
             },
             "kl_coeff": 1.0,
-            "num_workers": workers,
+            "num_workers": num_workers,
             "num_gpus": 0,
             "observation_filter": tune.choice(["NoFilter", "MeanStdFilter"]),
             "framework": "torch",

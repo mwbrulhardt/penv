@@ -6,7 +6,7 @@
             "num_assets": 4,
             "commission": 0.001,
             "time_cost": 0,
-            "window_size": 10,
+            "window_size": 9,
             "min_periods": 150
         },
         "kl_coeff": 1.0,
@@ -23,15 +23,15 @@
         },
         "num_sgd_iter": 10,
         "sgd_minibatch_size": 128,
-        "lambda": 0.9725796238473201,
-        "clip_param": 0.28227854820441545,
-        "lr": 0.000538758871719566,
-        "train_batch_size": 11672
+        "lambda": 0.9590554347994169,
+        "clip_param": 0.36228320294870875,
+        "lr": 0.0006692369891822994,
+        "train_batch_size": 8297
     },
     "checkpoints": [
         [
-            "/app/results/pbt_portfolio_reallocation/PPO_TradingEnv_9a1ab_00002_2_clip_param=0.28228,window_size=10,lambda=0.97258,lr=0.00053876,observation_filter=MeanStdFilter,train_2021-04-05_11-57-15/checkpoint_51/checkpoint-51",
-            67.42485460520479
+            "/app/results/pbt_portfolio_reallocation/PPO_TradingEnv_3d0f1_00001_1_clip_param=0.36228,window_size=9,lambda=0.95906,lr=0.00066924,observation_filter=MeanStdFilter,train__2021-04-09_12-24-44/checkpoint_39/checkpoint-39",
+            52.43454412638023
         ]
     ]
 }

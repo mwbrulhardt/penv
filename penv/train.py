@@ -25,12 +25,12 @@ def on_episode_end(info):
 
 
 @click.command()
-@click.option("--workers", default=8, type=int)
-def main(workers: int):
+@click.option("--num-workers", default=8, type=int)
+def main(num_workers: int):
     params = json.load(open("data/tuned_params.json", "r"))
 
     config = params["config"].copy()
-    config["num_workers"] = workers
+    config["num_workers"] = num_workers
     config["callbacks"] = {
         "on_episode_end": on_episode_end
     }

@@ -6,7 +6,7 @@
             "num_assets": 4,
             "commission": 0.001,
             "time_cost": 0,
-            "window_size": 10,
+            "window_size": 9,
             "min_periods": 150
         },
         "kl_coeff": 1.0,
@@ -23,15 +23,15 @@
         },
         "num_sgd_iter": 10,
         "sgd_minibatch_size": 128,
-        "lambda": 0.9725796238473201,
-        "clip_param": 0.28227854820441545,
-        "lr": 0.000538758871719566,
-        "train_batch_size": 11672
+        "lambda": 0.9590554347994169,
+        "clip_param": 0.36228320294870875,
+        "lr": 0.0006692369891822994,
+        "train_batch_size": 8297
     },
     "checkpoints": [
         [
-            "/app/results/portfolio_allocation/PPO_TradingEnv_7d4f0_00000_0_2021-04-05_12-45-35/checkpoint_52/checkpoint-52",
-            75.6314374608892
+            "/app/results/portfolio_allocation/PPO_TradingEnv_120bf_00000_0_2021-04-09_12-45-00/checkpoint_61/checkpoint-61",
+            71.77787635963443
         ]
     ]
 }

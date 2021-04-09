@@ -19,15 +19,20 @@ Run all of the following commands in order to ensure proper functionality.
 
 To tune run,
 ```sh
-$ python -m penv.tune --workers=8
+$ python -m penv.tune --num-samples=4 --num-workers=8
 ```
 
 To train run,
 ```sh
-$ python -m penv.train --workers=8
+$ python -m penv.train --num-workers=8
 ```
 
 To evaluate and render a chart for an episode run,
 ```sh
 $ python -m penv.evaluate --price-type=gbm
 ```
+
+<img src="charts//reallocation_chart.png" alt="drawing" height="500" width="900"/>
+
+## References
+* Jiang, Zhengyao, Dixing Xu, and Jinjun Liang. “A Deep Reinforcement Learning Framework for the Financial Portfolio Management Problem.” ArXiv.org (2017). Web. <https://arxiv.org/abs/1706.10059>.
