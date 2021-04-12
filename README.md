@@ -2,7 +2,7 @@
 
 This project serves as a guide for how to make more complex environments in TensorTrade. This code can either run locally or within a Docker container. Just make sure that all the libraries needed are properly downloaded when running locally.
 
-## Local (Virtual Envionment)
+## Local
 ```sh
 $ pip install -r requirements
 ```
