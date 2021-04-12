@@ -29,7 +29,7 @@ $ python -m penv.train --num-workers=8
 
 To evaluate and render a chart for an episode run,
 ```sh
-$ python -m penv.evaluate --price-type=gbm
+$ python -m penv.evaluate --price-type=sine
 ```
 
 <img src="charts//reallocation_chart.png" alt="drawing" height="500" width="900"/>
