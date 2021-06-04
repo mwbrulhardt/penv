@@ -1,2 +1,0 @@
-ray
-tensortrade==1.0.1b0
